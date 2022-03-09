@@ -7,7 +7,10 @@ const products=[
 ]
 // map using array of object
 const brand=products.map(product=>product.color)
-console.log(brand)
-
+// console.log(brand)
 const price=products.map(product=>product.price)
-console.log(price)
+// console.log(price)
+
+// forEach
+products.forEach(product=>console.log(product.name))
+products.forEach(product=>console.log(product))
