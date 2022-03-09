@@ -5,12 +5,21 @@ const products=[
     {name:'phone', brand:'lg',price:5000,color:'silver'},
     {name:'phone', brand:'htc',price:45000,color:'yello'}
 ]
-// map using array of object
+//1 map using array of object
 const brand=products.map(product=>product.color)
 // console.log(brand)
 const price=products.map(product=>product.price)
 // console.log(price)
 
-// forEach
-products.forEach(product=>console.log(product.name))
-products.forEach(product=>console.log(product))
+//2 forEach
+// products.forEach(product=>console.log(product.name))
+// products.forEach(product=>console.log(product))
+
+// 3 fillter
+
+const lowPrice=products.filter(product=>product.price<=5000)
+// console.log(lowPrice)
+const phone=products.filter(product=>product.name.includes('phone'))
+// console.log(phone)
+const color=products.filter(product=>product.color.includes('silver'))
+// console.log(color)
