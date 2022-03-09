@@ -23,3 +23,7 @@ const phone=products.filter(product=>product.name.includes('phone'))
 // console.log(phone)
 const color=products.filter(product=>product.color.includes('silver'))
 // console.log(color)
+
+// 4 find
+const spesificPhone=products.find(product=>product.name.includes('phone'))
+console.log(spesificPhone)
